@@ -175,7 +175,7 @@ void checkAnimal(animalStruct *curNode) {
         cout << "Is the animal a "<< curNode->animalGuess << "? (yes or no?)" << endl;
     }
     cin >> isItAnimal;
-    for (int runlength = 0; runlength <= isItAnimal.length(); runlength++) {
+    for (int runlength = 0; runlength < isItAnimal.length(); runlength++) {
         isItAnimal[runlength] = tolower(isItAnimal[runlength]);
     }
     if (isItAnimal == "yes") {
@@ -188,7 +188,7 @@ void checkAnimal(animalStruct *curNode) {
     }
     while (onlyYes_No == false) {
         cin >> isItAnimal;
-        for (int runlength = 0; runlength <= isItAnimal.length(); runlength++) {
+        for (int runlength = 0; runlength < isItAnimal.length(); runlength++) {
             isItAnimal[runlength] = tolower(isItAnimal[runlength]);
         }
     }
